@@ -218,6 +218,52 @@ header .menu{
         filter:blur(0);
     }
 }
+.Btn {
+  width: 140px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a);
+  background-size: 250%;
+  background-position: left;
+  color: #ffd277;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 1s;
+  overflow: hidden;
+}
+
+.Btn::before {
+  position: absolute;
+  content: "Explore";
+  color: #ffd277;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 97%;
+  height: 90%;
+  border-radius: 8px;
+  transition-duration: 1s;
+  background-color: rgba(0, 0, 0, 0.842);
+  background-size: 200%;
+}
+
+.Btn:hover {
+  background-position: right;
+  transition-duration: 1s;
+}
+
+.Btn:hover::before {
+  background-position: right;
+  transition-duration: 1s;
+}
+
+.Btn:active {
+  transform: scale(0.95);
+}
 .buttons{
     position: absolute;
     bottom:30px;
@@ -260,9 +306,67 @@ header .menu{
   
 }
 
+/*Title section */
+.titleBase{
+  padding: 25px 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 100px;
+  h1{
+    font-size: 4.5em;
+    color: var(--shade4);
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+  }
+  h4{
+    font-size: 2em;
+    color: var(--shade3);
+    letter-spacing: 2px;
+    padding: 0 20%;
+  }
+}
+.titleBtns{
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  justify-content: center;
+}
+@media screen and (max-width: 769px){
+  .titleBase{
+    padding-bottom: 200px;
+  }
+  .titleBase h1{
+    font-size: 3em;
+  }
+  .titleBase h4{
+    font-size: 1.5em;
+    padding: 0 10%;
+  }
+  .titleBtns{
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+}
+
+
+.content1::before {
+  content: "Contact Us";
+}
+.content2::before {
+  content: "Our Services";
+}
+
+
+/* end Title section */
+
 /*About us*/
 .about{
   width: 100%;
+  
   
 }
  .about-title>h2{
@@ -271,11 +375,13 @@ header .menu{
   color: var(--shade4);
   padding-top: 40px;
   font-size: 40px;
+  padding-bottom: 50px;
   
  }
  .about>p{
   text-align: center;
   padding: 0 5%;
+  padding-bottom: 50px;
  }
  .wrapper-v{
   font-family: 'poppins',sans-serif;
