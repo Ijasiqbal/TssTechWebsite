@@ -27,7 +27,7 @@
 
 body{
     background-color: var(--shade1);
-    width: 100vw;
+    width: 100%;
     
 }
 /*navbar*/
@@ -62,7 +62,7 @@ header .logo{
    
   margin-left: 50px;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 19px;
 }
 
 header ul {
@@ -341,7 +341,7 @@ header .menu{
   margin-bottom: 56px;
   max-width: 900px;
   text-align: center;
-  font-size: medium;
+  font-size: 20px;
 }
 
 .cards-carrer-container {
@@ -861,7 +861,7 @@ ul{
 
   /* visual styling */
   text-decoration: none;
-  font-family: var(--headingFont)
+  font-family: var(--headingFont);
   color: #fff;
   background: var(--shade3);
   border-radius: 100px;
@@ -893,13 +893,14 @@ ul{
 /*--careers------------------------------------------------------------------*/
 
 table {
-  width: 80%;
+  width: 70%;
   border-collapse: collapse;
   border: 0px solid #ddd;
   border-radius: 50px;
   padding: 100px; /* Add padding to the sides of the table */
   margin-bottom: 50px;
   background-color: rgba(221, 229, 236, 0.688);
+  font-family: var(--paraFont);
   
 }
 th, td {
@@ -914,6 +915,7 @@ th, td {
 th {
   background-color: #f2f2f2;
   font-size: medium;
+  font-family: var(--headingFont);
 }
 
 
@@ -1075,8 +1077,8 @@ background: #5029bc;
   align-items: center;
   flex-direction: column;
   background: var(--shade1);
-  margin-bottom: 0px;
-
+  margin-bottom: 10px;
+  
 }
 .wrapper h1{
   font-size: 60px;
@@ -1224,7 +1226,7 @@ border: 1px solid var(--shade3);
   }
   .welcome .box-container .box
   {
-    width: 100%;
+    width: 10s0%;
     background-color: var(--shade3);
     box-shadow: #151516;
     text-align: center;
@@ -1341,10 +1343,11 @@ border: 1px solid var(--shade3);
   {
     text-align: center;
     color: #000000;
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding-bottom: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 1.3px;
+    font-family: var(--headingFont);
   }
   .sub-heading
   {
@@ -1359,7 +1362,8 @@ border: 1px solid var(--shade3);
   }
   .welcome .box-container
   { 
-    padding: 40PX;
+    padding-top: 40PX;
+    padding-left: 100PX;
     display: flex;
     gap: 1rem;
     align-items: center;
@@ -1467,4 +1471,9 @@ border: 1px solid var(--shade3);
     z-index: -1; 
     background-size: cover;
     backdrop-filter: blur(10px);
+    padding-bottom: 50px
+  }
+  #services-sections
+  {
+    padding: 100px;
   }
