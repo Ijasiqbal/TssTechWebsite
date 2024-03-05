@@ -4,6 +4,10 @@
   --shade2: #f2e9e4;
   --shade3: #4a4e69;
   --shade4: #22223b;
+
+
+  --headingFont: Copperplate, Copperplate Gothic Light, fantasy;
+  --paraFont: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
 /*
   --shade1: #22223b;
   --shade2: #4a4e69;
@@ -16,7 +20,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
   a{
     all: unset;
   }
@@ -25,7 +28,9 @@
 
 body{
     background-color: var(--shade1);
-    width: 100vw;
+    width: 100%;
+    font-family: var(--paraFont);
+
     
 }
 /*navbar*/
@@ -77,6 +82,7 @@ header ul li a{
   text-transform: uppercase;
   padding: 10px 15px;
   cursor: pointer;
+  font-family: var(--headingFont);
 }
 header ul li a:hover{
   border-bottom: 2px solid var(--shade2);
@@ -183,7 +189,10 @@ header .menu{
     color:var(--shade1);
     transform: translate(0,-50%);
     display: none;
-    font-family: system-ui;
+    font-family: var(--headingFont);
+}
+.des{
+  font-family: var(--paraFont);
 }
 .item:nth-child(2) .content{
     display: block;
@@ -325,6 +334,7 @@ header .menu{
     color: var(--shade3);
     letter-spacing: 2px;
     padding: 0 20%;
+    font-family: var(--paraFont);
   }
 }
 .titleBtns{
@@ -366,6 +376,7 @@ header .menu{
 /*new about us*/
 .aboutBase{
   overflow: hidden;
+  height: 800px;
 
 }
 .aboutHeading{
@@ -378,6 +389,12 @@ header .menu{
   border-radius: 10px;
   display: inline-block;
   border: 2px solid var(--shade3);
+  h1{
+    font-family: var(--headingFont);
+  }
+  p{
+    font-family: var(--paraFont);
+  }
 
 }
 .aboutimage{
@@ -388,17 +405,24 @@ img{
 }
 
 @media screen and (max-width: 1200px){
+  .aboutBase{
+    height: 700px;
+  }
   .aboutHeading{
     left: 40%;
     top: -350px;
     width: 55%;
     text-align: justify;
+    
   }
   .aboutimage{
   }
   
 }
 @media screen and (max-width: 1000px){
+  .aboutBase{
+    height: 800px;
+  }
   .aboutHeading{
     top: -250px;
     left: 30%;
@@ -413,6 +437,9 @@ img{
   
 }
 @media screen and (max-width: 769px){
+  .aboutBase{
+    height: 1000px;
+  }
   .aboutHeading{
     top: -100px;
     left: 15%;
@@ -441,18 +468,19 @@ img{
   text-align: center;
   width: 100%;
   color: var(--shade4);
-  padding-top: 40px;
+  padding-top: 0;
   font-size: 40px;
   padding-bottom: 50px;
+  font-family: var(--headingFont);
   
  }
  .about>p{
   text-align: center;
   padding: 0 5%;
   padding-bottom: 50px;
+  font-family: var(--paraFont);
  }
  .wrapper-v{
-  font-family: 'poppins',sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -481,6 +509,13 @@ img{
   text-align: justify;
   padding-top: 80px;
   padding-bottom: 40px;
+  h1{
+    font-family: var(--headingFont);
+  }
+  p{
+    font-family: var(--paraFont);
+  
+  }
 
 }
 
