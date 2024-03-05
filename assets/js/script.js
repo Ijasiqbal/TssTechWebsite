@@ -61,4 +61,10 @@ document.querySelector('.contactBtn').addEventListener('click', function() {
   
 });
 
+function openGmailAndCall() {
+  var gmailUrl = "https://mail.google.com/";
+  window.open(gmailUrl, "_blank");
+  var phoneNumber = document.getElementById("phoneNumber").innerText;
+  window.location.href = "tel:" + phoneNumber;
+}
 

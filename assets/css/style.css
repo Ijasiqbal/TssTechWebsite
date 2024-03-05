@@ -1702,3 +1702,18 @@ border: 1px solid var(--shade3);
   animation: slide-in 1000ms;
 }
 /* end previous services css for about us section*/
+
+/* contact form */
+.required-field {
+  position: absolute;
+  color: red;
+  font-size: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5px;
+}
+
+.input-box {
+  position: relative;
+}
+/* contact form end */

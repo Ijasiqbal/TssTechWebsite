@@ -4,93 +4,179 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TssTech</title>
-    <link rel="stylesheet" href="/assets/css/service.css">
+    <link rel="stylesheet" href="/assets/css/services.css">
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+ @media only screen and (max-width: 768px) {
+        .content-container {
+
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center items vertically */
+        }
+        .tags, .content {
+            width: 100%; /* Take up full width */
+        }
+    }
+    
+        .image-container {
+            position: relative;
+            top: 0;
+            left: 0;
+            height: 500px;
+            width: 700px;
+            background-size: cover;
+            border-radius: 20px;
+           
+            text-align: center;
+            display: flex;
+            text-align: justify;
+            justify-content: space-between;
+            animation: imageAnimation 15s infinite;
+           
+        }
+        .image-text>h1{
+            position: relative; /* Position text absolutely */
+            top: 150px;
+            left: 10px; /* Adjust left position as needed */
+            bottom: 10px; /* Adjust bottom position as needed */
+            color:white; /* Set text color */
+            font-size: 50px; /* Set text size */
+            Font-family:Copperplate, Copperplate Gothic Light, fantasy;
+        }
+        .intro{
+            position: relative;
+            left: 400px;
+            justify-content:left;
+        }
+        .image-container>.intro>h1{
+        Font-family:Copperplate, Copperplate Gothic Light, fantasy;
+            font-size: 60px;
+             
+    }
+    .intro>p{
+        Font-family:Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
+            font-size: 20px;
+            text-align: center;
+
+    }
+        .content-container{
+            padding-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            
+        }
+        .content h2{
+            Font-family:Copperplate, Copperplate Gothic Light, fantasy;
+            font-size: 40px;
+        }
+        .content-container h2{
+            Font-family:Copperplate, Copperplate Gothic Light, fantasy;
+            font-size: 50px;
+            border-bottom: 4px ridge #000;
+            text-align: center;
+           
+        }
+        .content {
+        flex: 2; 
+        Font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
+        font-size: 18px;
+        line-height: 2;
+        text-align: justify;
+       }
+       .tags {
+        flex: 1;
+        margin-right: 20px;
+        Font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
+        font-size: 20px;
+        line-height: 2.5;
+        background-color:  #fff394;
+        border-radius: 150px;
+        padding: 10px 10px 10px 50px;   
+        animation: fadeIn 1.5s ease-in-out;                       
+    }
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .tag:hover {
+        transform: scale(1.1);
+    }
+
+
+
+        @keyframes imageAnimation {
+            0% {
+                background-image: url('https://res.cloudinary.com/dbmxe4x1r/image/upload/v1709622600/html-css-collage-concept_23-2150061955_zqeycd.jpg');
+            }
+            25% {
+                background-image: url('https://res.cloudinary.com/dbmxe4x1r/image/upload/v1709622696/bs1_qgw2wa.jpg');
+            }
+            50% {
+                background-image: url('https://res.cloudinary.com/dbmxe4x1r/image/upload/v1709622687/bs_anayjb.jpg');
+            }
+            75% {
+                background-image: url('https://res.cloudinary.com/dbmxe4x1r/image/upload/v1709622581/bs_fwbc9h.jpg');
+            }
+            100% {
+                background-image: url('https://res.cloudinary.com/dbmxe4x1r/image/upload/v1709622560/pexels-photo-270637_ozbr0y.webp');
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <input type ="checkbox" name ="" id ="chk1">
-        <div class="logo">
-            <img src="https://res.cloudinary.com/dccwhehhp/image/upload/v1709291309/img/logo-no-background_kqrt4t.png" alt="logo">
+    <!--start-->
+        <div class="image-container">
+            <div class="image-text"><h1>Backend Services</h1></div>
+            <div class="intro"><h1>What is Backend Services?</h1>
+                <p>The back end is a combination of servers and databases. Servers control how users access files. Databases are organized and structured collections of data.Backend services refer to the part of a software system or application that is responsible for managing data, processing requests, and performing operations that are not directly visible to the end-user.</p></div>
         </div>
-            
+        <div class="content-container">
+        <div class="tags">
+            <h2>Requirements</h2>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#about-section">About us</a></li>
-                <li><a href="index.html#services-section">Services</a></li>
-                <li><a href="careers.html">Careers</a></li>
-                <li><a href="#footer-section">contact</a></li>
-            </ul>
-            <div class="menu">
-                <label for="chk1">
-                    <i class="fa fa-bars"></i>
-                </label>
-            </div>
-    </header>
-    <section class="fullBSbackground">
-        <div class="base">
-            <div class="banner">
-                <div class="serviceLHS">
-                    <img src="https://res.cloudinary.com/dccwhehhp/image/upload/v1709290790/backendservices_ivmb8t.jpg" class="puff-in-center"alt="BackendServices">
-                </div>
-                <div class="serviceRHS  text-focus-in">
-                    <h2>Backend Services</h2>
-                    <p>Embark on a journey of digital innovation with our Backend services</p>
-                    <div class="learnMoreBS">
-                        <a href="#content"><button> Learn More</button></a>
-                    </div>
-                </div>
-            </div>
-            <div id="content" class="content focus-in-expand">
-                <h2>Why Choose Our Service</h2>
-                <p>Enter the core of your digital strategy with our backend solutions.  We're the architects where crafting powerful and flexible backend solutions designed to support your business goals. From database architecture to API integration, we handle the technical complexities behind the scenes.</p>
-            </div>
-            <div class="tags">
-                <h2>What We Can Do</h2>
-                <div class="tagBS">Database</div>
-                <div class="tagBS">User Authentication</div>
-                <div class="tagBS">Database Management system</div>
-                <div class="tagBS">Database Administrative system</div>
-                <div class="tagBS">Server hosting services</div>
-                <div class="tagBS">Cloud storages</div>
-                <div class="tagBS">Many more...</div>
-            </div>
+            <div class="tag"><i class='bx bx-chevrons-right'></i>Programming Languages</div>
+                <div class="tag"><i class='bx bx-chevrons-right'></i>Web Frameworks </div>
+                    <div class="tag"><i class='bx bx-chevrons-right'></i>Databases and Data Storage</div>
+                        <div class="tag"><i class='bx bx-chevrons-right'></i>API Development</div>
+                            <div class="tag"><i class='bx bx-chevrons-right'></i> Documentation</div>
+                                <div class="tag"><i class='bx bx-chevrons-right'></i>Monitoring and Logging</div>
+                                    <div class="tag"><i class='bx bx-chevrons-right'></i>Containerization</div>
+                                       
+        </ul>
         </div>
-    </section>
-        <footer class="footer" id="footer-section">
-             <div class="container-foot">
-                 <div class="row">
-                     <div class="footer-col">
-                         <a href="#"><h1>tss <br>Technologies</h1></a>
-                     </div>
-                     <div class="footer-col">
-                         <h4>Company</h4>
-                         <ul>
-                            <li><a href="index.html#about-section">About us</a></li>
-                            <li><a href="#technologies-section">Technologies</a></li>          
-                             <li><a href="index.html#services-section">Services</a></li>
-                            <li><a href="careers.html">Careers</a></li>
-                         </ul>
-                         </ul>
-                     </div>
-                     <div class="footer-col">
-                         <h4>Office Address</h4>
-                      <p><a href="https://www.google.com/maps/place/tsstechnologies/@12.8467969,77.6454114,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae6b001701e68f:0xfcfc02e742de621!8m2!3d12.8467917!4d77.6479863!16s%2Fg%2F11ldhv_xs8?entry=ttu">Banglore,Karnatraka,India</a></p>
-                     </div>
-                     <div class="footer-col">
-                         <h4>follow us</h4>
-                         <div class="social-links">
-                             <a href="https://www.facebook.com/profile.php?id=61556577814647&mibextid=LQQJ4d"><i class="fab fa-facebook-f"></i></a>
-                             <a href="https://twitter.com/TssTechies"><i class="fab fa-twitter"></i></a>
-                             <a href="https://www.instagram.com/tsstechies?igsh=OXpnZmg3enBmcGo0"><i class="fab fa-instagram"></i></a>
-                             <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-        </footer>
-        <script src="/assets/js/script.js"></script>
+        <div class="content">
+            <h2>Backend Services</h2>
+            <p>Backend services play a pivotal role in powering the functionality and logic behind web and mobile applications. These services, often unseen by users, act as the backbone of any software system, managing data, processing requests, and facilitating communication between various components.</p>
+            <ul>
+                <li>Backend services manage the storage, retrieval, and manipulation of data. This includes interactions with databases, caching systems, and file storage solutions. By efficiently managing data, backend services ensure that applications can access and utilize information effectively.</li>
+                <li>It implement the business rules and processes that govern how an application operates. They enforce security measures, validate inputs, and execute complex algorithms to perform calculations and decision-making tasks. This logic ensures that applications behave consistently and securely across different user interactions.</li>
+                <li>This enables seamless integration with third-party APIs, services, and external systems. They facilitate communication between different components of an application and external resources, such as payment gateways, social media platforms, or analytics tools. This integration enhances the functionality and utility of applications by leveraging external services and data.</li>
+                <li>These are crucial for optimizing the performance and scalability of applications. They employ techniques such as load balancing, caching, and asynchronous processing to handle large volumes of requests efficiently. By optimizing resource utilization and minimizing response times, backend services ensure that applications remain responsive and reliable, even under heavy loads.</li>
+                <li>Backend services play a crucial role in ensuring the security and integrity of applications and their data. They implement authentication, authorization, and encryption mechanisms to protect sensitive information and prevent unauthorized access or malicious attacks. Additionally, backend services continuously monitor and analyze security threats, applying patches and updates to mitigate risks effectively.</li>
+                <li> Backend services must be designed with scalability and elasticity in mind to accommodate growing user bases and increasing workloads. Horizontal scaling, where multiple instances of a service are deployed across multiple servers, helps distribute load and improve fault tolerance. Additionally, cloud-based solutions offer elasticity by automatically adjusting resources based on demand.</li>
+                <li>Backend services implement robust authentication and authorization mechanisms to control access to resources and protect sensitive data. Techniques such as token-based authentication, OAuth, and role-based access control (RBAC) are commonly used to authenticate users and enforce access policies based on their roles and permissions.</li>
+            </ul>
+            <h3>WHY CHOOSE US?</h3>
+            <li>Experience and expertise</li>
+            <li>Scalability and reliability</li>
+            <li>Customization and flexibility</li>
+            <li>Security</li>
+            <li>Cost-effectiveness</li>
+            <li>Support and maintenance</li>
+        </div>
+    </div>
+        <p></p>
+    <!--end-->
+    
 </body>
 </html>

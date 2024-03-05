@@ -3,102 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <a href="index.html">
-    <a/>
     <title>TssTech</title>
-    <link rel="stylesheet" href="/assets/css/service.css">
+    <link rel="stylesheet" href="/assets/css/services.css">
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+ @media only screen and (max-width: 768px) {
+        .content-container {
+
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center items vertically */
+        }
+        .tags, .content {
+            width: 100%; /* Take up full width */
+        }
+    }
+    
+        .image-container {
+            position: relative;
+            top: 0;
+            left: 0;
+            height: 500px;
+            width: 700px;
+            background-size: cover;
+            border-radius: 20px;
+           
+            text-align: center;
+            display: flex;
+            text-align: justify;
+            justify-content: space-between;
+            animation: imageAnimation 15s infinite;
+           
+        }
+        .image-text>h1{
+            position: relative; /* Position text absolutely */
+            top: 150px;
+            left: 10px; /* Adjust left position as needed */
+            bottom: 10px; /* Adjust bottom position as needed */
+            color:white; /* Set text color */
+            font-size: 50px; /* Set text size */
+            Font-family:Copperplate, Copperplate Gothic Light, fantasy;
+        }
+        .intro{
+            position: relative;
+            left: 400px;
+            justify-content: center;
+        }
+        .image-container>.intro>h1{
+        Font-family:Copperplate, Copperplate Gothic Light, fantasy;
+            font-size: 60px;
+             
+    }
+    .intro>p{
+        Font-family:Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
+            font-size: 20px;
+            text-align: center;
+
+    }
+        .content-container{
+            padding-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            
+        }
+        .content h2{
+            Font-family:Copperplate, Copperplate Gothic Light, fantasy;
+            font-size: 40px;
+        }
+        .content-container h2{
+            Font-family:Copperplate, Copperplate Gothic Light, fantasy;
+            font-size: 50px;
+            border-bottom: 4px ridge #000;
+            text-align: center;
+           
+        }
+        .content {
+        flex: 2; 
+        Font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
+        font-size: 18px;
+        line-height: 2;
+        text-align: justify;
+       }
+       .tags {
+        flex: 1;
+        margin-right: 20px;
+        Font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
+        font-size: 20px;
+        line-height: 2.5;
+        background-color:  #fff394;
+        border-radius: 150px;
+        padding: 10px 10px 10px 50px;   
+        animation: fadeIn 1.5s ease-in-out;                       
+    }
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .tag:hover {
+        transform: scale(1.1);
+    }
+
+
+
+        @keyframes imageAnimation {
+            0% {
+                background-image: url('https://res.cloudinary.com/dbmxe4x1r/image/upload/v1709622063/concept-smartphone-trend-social-media-platform_1409-4893_oxchrb.jpg');
+            }
+            25% {
+                background-image: url('https://res.cloudinary.com/dbmxe4x1r/image/upload/v1709621759/medium-shot-woman-working-laptop_23-2150323510_hfurjj.jpg');
+            }
+            50% {
+                background-image: url('https://res.cloudinary.com/dbmxe4x1r/image/upload/v1709621879/smartphone-with-user-interface-concept_52683-104212_vb44ec.jpg');
+            }
+            75% {
+                background-image: url('https://res.cloudinary.com/dbmxe4x1r/image/upload/v1709622011/programming-background-with-person-working-with-codes-computer_23-2150010125_dyffyh.jpg');
+            }
+            100% {
+                background-image: url('https://res.cloudinary.com/dbmxe4x1r/image/upload/v1709621761/medium-shot-woman-working-laptop_23-2150323516_cgg79y.jpg');
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <input type ="checkbox" name ="" id ="chk1">
-        <div class="logo">
-            <img src="https://res.cloudinary.com/dccwhehhp/image/upload/v1709291309/img/logo-no-background_kqrt4t.png" alt="logo">
+    <!--start-->
+        <div class="image-container">
+            <div class="image-text"><h1>App <BR>Development</h1></div>
+                <div class="intro"><h1>What is App Development?</h1><br>
+                    <p>App development, refers to the process of creating software applications that run on various devices such as smartphones, tablets, desktop computers, and other electronic devices. These applications, commonly known as "apps," serve a wide range of purposes and can be developed for different platforms, including iOS, Android, web, and desktop.</p></div>
         </div>
-            
+        <div class="content-container">
+        <div class="tags">
+            <h2>Requirements</h2>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#about-section">About us</a></li>
-                <li><a href="index.html#services-section">Services</a></li>
-                <li><a href="careers.html">Careers</a></li>
-                <li><a href="#footer-section">contact</a></li>
-            </ul>
-            <div class="menu">
-                <label for="chk1">
-                    <i class="fa fa-bars"></i>
-                </label>
-            </div>
-    </header>
-    <section class="fullADbackground">
-        <div class="base">
-            <div class="banner">
-                <div class="serviceLHS">
-                    <img src="https://res.cloudinary.com/dccwhehhp/image/upload/v1709291270/img/AppDevelopment_xxteay.png"  class="puff-in-center"alt="webDevelopment" >
-                </div>
-                <div class="serviceRHS text-focus-in">
-                    <h2>App Development</h2>
-                    <p>Embark on a journey of digital innovation with our App development service</p>
-                    <div class="learnMoreAD">
-                        <a href="#content"><button> Learn More</button></a>
-                    </div>
-                </div>
-            </div>
-            <div id="content" class="content focus-in-expand">
-                <h2>Why Choose Our Service</h2>
-                <p>Explore the possibilities with our App development service,  where innovation meets efficiency. Our dedicated team is here  in crafting bespoke Android and IOS applications tailored to your unique needs. From concept to execution, we're dedicated to delivering apps with intuitive designs, smooth functionality, and unmatched user experiences.</p>
-            </div>
-            <div class="tags">
-                <h2>What We Can Do</h2>
-                <div class="tag" >Mobile App</div>
-                <h3>Mobile App Development</h3>
-                <p>Our mobile app development services include...</p>
-                </div>
-    
-                <div class="tagAD">Android Application</div>
-                <div class="tagAD">IOS Application</div>
-                <div class="tagAD">Ecommerce</div>
-                <div class="tagAD">Blog</div>
-                <div class="tagAD">Custom Apps</div>
-                <div class="tagAD">Business Apps</div>
-                <div class="tagAD">Finance Apps</div>
-                <div class="tagAD">Many more...</div>
-            </div>
+            <div class="tag"><i class='bx bx-chevrons-right'></i>Integrated Development Environments (IDEs)</div>
+                <div class="tag"><i class='bx bx-chevrons-right'></i>Cross-platform Development Tools </div>
+                    <div class="tag"><i class='bx bx-chevrons-right'></i>Backend Development Tools</div>
+                        <div class="tag"><i class='bx bx-chevrons-right'></i>UI Design and Prototyping Tools</div>
+                            <div class="tag"><i class='bx bx-chevrons-right'></i> Version Control and Collaboration Tools</div>
+                                <div class="tag"><i class='bx bx-chevrons-right'></i>Testing and Quality Assurance Tools</div>
+                                    <div class="tag"><i class='bx bx-chevrons-right'></i>Analytics and Monitoring Tools</div>
+                                       
+        </ul>
         </div>
-    </section>
-        <footer class="footer" id="footer-section">
-             <div class="container-foot">
-                 <div class="row">
-                     <div class="footer-col">
-                         <a href="#"><h1>tss <br>Technologies</h1></a>
-                     </div>
-                     <div class="footer-col">
-                         <h4>Company</h4>
-                         <ul>
-                            <li><a href="index.html#about-section">About us</a></li>
-                            <li><a href="#technologies-section">Technologies</a></li>          
-                             <li><a href="index.html#services-section">Services</a></li>
-                            <li><a href="careers.html">Careers</a></li>
-                         </ul>
-                     </div>
-                     <div class="footer-col">
-                         <h4>Office Address</h4>
-                      <p><a href="https://www.google.com/maps/place/tsstechnologies/@12.8467969,77.6454114,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae6b001701e68f:0xfcfc02e742de621!8m2!3d12.8467917!4d77.6479863!16s%2Fg%2F11ldhv_xs8?entry=ttu">Banglore,Karnatraka,India</a></p>
-                     </div>
-                     <div class="footer-col">
-                         <h4>follow us</h4>
-                         <div class="social-links">
-                             <a href="https://www.facebook.com/profile.php?id=61556577814647&mibextid=LQQJ4d"><i class="fab fa-facebook-f"></i></a>
-                             <a href="https://twitter.com/TssTechies"><i class="fab fa-twitter"></i></a>
-                             <a href="https://www.instagram.com/tsstechies?igsh=OXpnZmg3enBmcGo0"><i class="fab fa-instagram"></i></a>
-                             <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-        </footer>
-        <script src="/assets/js/script.js"></script>
+        <div class="content">
+            <h2>App Development</h2>
+            <p>App development, the process of creating software applications for mobile devices, has emerged as a dynamic and rapidly evolving field, offering endless opportunities for innovation and creativity.Mobile applications come in various forms, including native apps, which are developed specifically for a single platform (e.g., iOS or Android), and cross-platform apps, which can run on multiple platforms using a single codebase</p>
+            <ul>
+                <li>  Developers must choose the appropriate platform(s) for their app, considering factors such as target audience demographics, market share, and development resources. The two primary platforms are iOS (Apple devices) and Android (Google devices), each with its own programming languages, development environments, and app store ecosystems.</li>
+                <li> UX design is critical for creating intuitive and engaging mobile apps. Designers focus on elements such as navigation, layout, typography, and visual hierarchy to ensure a seamless and enjoyable user experience. Usability testing and user feedback are essential for refining the design and optimizing usability.</li>
+                <li> Mobile app performance is crucial for user satisfaction and retention. Developers optimize app performance by minimizing loading times, reducing memory usage, and optimizing code for efficiency. Techniques such as lazy loading, caching, and background processing help improve app responsiveness and stability.</li>
+                <li>Security is paramount in app development to protect user data and prevent unauthorized access or malicious attacks. Developers implement security measures such as encryption, secure authentication, and data validation to safeguard sensitive information and ensure compliance with privacy regulations (e.g., GDPR, CCPA).</li>
+                <li>Many apps require offline functionality to provide uninterrupted access to content and features, even when users are not connected to the internet. Developers implement offline capabilities by caching data locally, enabling offline mode, and synchronizing changes with remote servers when connectivity is restored.</li>
+                <li>  Mobile apps often leverage device features such as GPS, camera, microphone, and sensors to enhance functionality and provide personalized experiences. Developers utilize platform-specific APIs and libraries to integrate with device features seamlessly, enabling features like location-based services, augmented reality, and biometric authentication.</li>
+                <li> Cross-platform development frameworks such as React Native, Flutter, and Xamarin enable developers to write code once and deploy apps on multiple platforms. This approach reduces development time and costs while maintaining a consistent user experience across different devices and operating systems.</li>
+            </ul>
+            <h3>WHY CHOOSE US?</h3>
+            <li>Experience and Expertise</li>
+            <li>Customized Solutions</li>
+            <li>Quality Assurance</li>
+            <li>User-Centric Design</li>
+            <li>Transparent Communication</li>
+            <li>Timely Delivery</li>
+            <li>Post-launch Support</li>
+        </div>
+    </div>
+        <p></p>
+    <!--end-->
     
 </body>
 </html>

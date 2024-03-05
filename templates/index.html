@@ -460,25 +460,29 @@
     
     <div class="container-contact none" id="contactForm">
      
-        <div class="content-contact" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
-          <div class="right-side" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
-            <div class="topic-text"><h2 data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">Send us a message</h2></div>
-            <p data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">Tell us about your project our executives will reach out to understand your needs.</p>
+        <div class="content-contact" data-aos="fade-up" >
+          <div class="right-side" data-aos="fade-up" >
+            <div class="topic-text"><h2 data-aos="fade-up" >Send us a message</h2></div>
+            <p data-aos="fade-up" >Tell us about your project our executives will reach out to understand your needs.</p>
           <form action="#" id="myForm">
-            <div class="input-box" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
-              <input type="text" placeholder="Enter your name" required name="name" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+            <div class="input-box " data-aos="fade-up" >
+                <span class="required-field">*</span>
+              <input type="text"  placeholder="Enter your name" required name="name" data-aos="fade-up" >
             </div>
-            <div class="input-box" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
-              <input type="number" placeholder="Enter your Mobile" required name="Mobile" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+            <div class="input-box " data-aos="fade-up" >
+                
+              <input type="number"  placeholder="Enter your Mobile" required name="Mobile" data-aos="fade-up" >
             </div>
-            <div class="input-box" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
-                <input type="email" placeholder="Enter your Email" required name="email" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+            <div class="input-box" data-aos="fade-up" >
+                <span class="required-field">*</span>
+                <input type="email"  placeholder="Enter your Email" required name="email" data-aos="fade-up" >
               </div>
-            <div class="input-box message-box" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
-                <input type="text" placeholder="Write a message..." required name="message" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+            <div class="input-box message-box" data-aos="fade-up" >
+                
+                <input type="text"  placeholder="Write a message..." required name="message" data-aos="fade-up" >
             </div>
-            <div class="button-contact" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
-              <input type="submit" value="Send Now" id="success" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+            <div class="button-contact" data-aos="fade-up">
+              <input type="submit" value="Send Now" id="success" data-aos="fade-up" >
             </div>
           </form>
         </div>
@@ -535,14 +539,9 @@
     <script>
         AOS.init({
             duration: 1500,
-            once: false,
+            once: true,
         });
-        function openGmailAndCall() {
-            var gmailUrl = "https://mail.google.com/";
-            window.open(gmailUrl, "_blank");
-            var phoneNumber = document.getElementById("phoneNumber").innerText;
-            window.location.href = "tel:" + phoneNumber;
-        }
+        
     </script>
 
       </body>

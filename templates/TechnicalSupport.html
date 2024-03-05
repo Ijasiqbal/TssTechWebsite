@@ -4,95 +4,178 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TssTech</title>
-    <link rel="stylesheet" href="/assets/css/service.css">
+    <link rel="stylesheet" href="/assets/css/services.css">
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+ @media only screen and (max-width: 768px) {
+        .content-container {
+
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center items vertically */
+        }
+        .tags, .content {
+            width: 100%; /* Take up full width */
+        }
+    }
+    
+        .image-container {
+            position: relative;
+            top: 0;
+            left: 0;
+            height: 500px;
+            width: 700px;
+            background-size: cover;
+            border-radius: 20px;
+            text-align: center;
+            display: flex;
+            text-align: justify;
+            justify-content: space-between;
+            animation: imageAnimation 15s infinite;
+           
+        }
+        .image-text>h1{
+            position: relative; /* Position text absolutely */
+            top: 150px;
+            left: 10px; /* Adjust left position as needed */
+            bottom: 10px; /* Adjust bottom position as needed */
+            color:white; /* Set text color */
+            font-size: 50px; /* Set text size */
+            Font-family:Copperplate, Copperplate Gothic Light, fantasy;
+        }
+        .intro{
+            position: relative;
+            left: 400px;
+            justify-content: center;
+        }
+        .image-container>.intro>h1{
+           
+            Font-family:Copperplate, Copperplate Gothic Light, fantasy;
+            font-size: 60px;
+            justify-content: right;
+             
+    }
+    .intro>p{
+        Font-family:Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
+            font-size: 20px;
+            text-align: center;
+            justify-content: right;
+
+    }
+        .content-container{
+            padding-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            
+        }
+        .content h2{
+            Font-family:Copperplate, Copperplate Gothic Light, fantasy;
+            font-size: 40px;
+        }
+        .content-container h2{
+            Font-family:Copperplate, Copperplate Gothic Light, fantasy;
+            font-size: 50px;
+            border-bottom: 4px ridge #000;
+            text-align: center;
+           
+        }
+        .content {
+        flex: 2; 
+        Font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
+        font-size: 18px;
+        line-height: 2;
+        text-align: justify;
+       }
+       .tags {
+        flex: 1;
+        margin-right: 20px;
+        Font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
+        font-size: 20px;
+        line-height: 2.5;
+        background-color:  #fff394;
+        border-radius: 150px;
+        padding: 10px 10px 10px 50px;   
+        animation: fadeIn 1.5s ease-in-out;                       
+    }
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .tag:hover {
+        transform: scale(1.1);
+    }
+
+
+
+        @keyframes imageAnimation {
+            0% {
+                background-image: url('https://res.cloudinary.com/dbmxe4x1r/image/upload/v1709619092/focused-coworkers-headsets-typing-laptops_74855-2777_boq62l.jpg');
+            }
+            25% {
+                background-image: url('https://res.cloudinary.com/dbmxe4x1r/image/upload/v1709619266/portrait-smart-businesswoman-thinking_23-2148452670_awox1t.jpg');
+            }
+            50% {
+                background-image: url('https://res.cloudinary.com/dbmxe4x1r/image/upload/v1709620102/business-woman-talking-phone-staying-late-night-office_1303-27087_vdk4wc.jpg');
+            }
+            75% {
+                background-image: url('https://res.cloudinary.com/dbmxe4x1r/image/upload/v1709619387/happy-female-call-center-agent-wearing-headset-while-working-office_637285-6675_qb2cao.jpg');
+            }
+            100% {
+                background-image: url('https://res.cloudinary.com/dbmxe4x1r/image/upload/v1709533330/img1web_guii47.jpg');
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <input type ="checkbox" name ="" id ="chk1">
-        <div class="logo">
-            <img src="https://res.cloudinary.com/dccwhehhp/image/upload/v1709291309/img/logo-no-background_kqrt4t.png" alt="logo">
+    <!--start-->
+        <div class="image-container">
+            <div class="image-text"><h1>Technical Support</h1></div>
+            <div class="intro"><h1>What is Technical Support?</h1>
+                <p>Technical support refers to services provided by a company or organization to assist users in resolving technical issues or problems they encounter with their products or services. Technical support can cover a wide range of products and technologies, including software, hardware, electronic devices, and online services.</p></div>
         </div>
-            
+        <div class="content-container">
+        <div class="tags">
+            <h2>Requirements</h2>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#about-section">About us</a></li>
-                <li><a href="index.html#services-section">Services</a></li>
-                <li><a href="careers.html">Careers</a></li>
-                <li><a href="#footer-section">contact</a></li>
-            </ul>
-            <div class="menu">
-                <label for="chk1">
-                    <i class="fa fa-bars"></i>
-                </label>
-            </div>
-    </header>
-    <section class="fullTSbackground">
-        <div class="base">
-            <div class="banner">
-                <div class="serviceLHS">
-                    <img src="https://res.cloudinary.com/dccwhehhp/image/upload/v1709291313/img/Technicalsupport_qryfco.webp"class="puff-in-center" alt="webDevelopment">
-                </div>
-                <div class="serviceRHS text-focus-in">
-                    <h2>Technical Support</h2>
-                    <p>Embark on a journey of digital innovation with our Technical Support service</p>
-                    <div class="learnMoreTS">
-                        <a href="#content"><button> Learn More</button></a>
-                    </div>
-                </div>
-            </div>
-            <div id="content" class="content focus-in-expand">
-                <h2>Why Choose Our Service</h2>
-                <p>we provide comprehensive technical support services to keep your business running smoothly. Our team of experts is dedicated to resolving your technical issues quickly and efficiently, so you can focus on what matters most—your business.Need technical support? Contact us today to learn more about our technical support services and how we can help you keep your business running smoothly.</p>
-            </div>
-            <div class="tags">
-                <h2>What We Can Do</h2>
-                <div class="tagTS">24/7 Support</div>
-                <div class="tagTS">Remote Assistance</div>
-                <div class="tagTS">Hardware Support</div>
-                <div class="tagTS">Software Support</div>
-                <div class="tagTS">Network Support</div>
-                <div class="tagTS">Data Security</div>
-                <div class="tagTS">IT Consultation</div>
-                <div class="tagTS">Mobile Device Support</div>
-                <div class="tagTS">Many more...</div>
-            </div>
+            <div class="tag"><i class='bx bx-chevrons-right'></i>Ticketing Systems</div>
+                <div class="tag"><i class='bx bx-chevrons-right'></i>Remote Desktop Support</div>
+                    <div class="tag"><i class='bx bx-chevrons-right'></i>Knowledge Base and Documentation</div>
+                        <div class="tag"><i class='bx bx-chevrons-right'></i>Live Chat and Messaging</div>
+                            <div class="tag"><i class='bx bx-chevrons-right'></i>Screen Recording and Sharing</div>
+                                <div class="tag"><i class='bx bx-chevrons-right'></i>Customer Relationship Management (CRM)</div>
+                                       
+        </ul>
         </div>
-    </section>
-        <footer class="footer" id="footer-section">
-             <div class="container-foot">
-                 <div class="row">
-                     <div class="footer-col">
-                         <a href="#"><h1>tss <br>Technologies</h1></a>
-                     </div>
-                     <div class="footer-col">
-                         <h4>Company</h4>
-                         <ul>
-                            <li><a href="index.html#about-section">About us</a></li>
-                            <li><a href="#technologies-section">Technologies</a></li>          
-                             <li><a href="index.html#services-section">Services</a></li>
-                            <li><a href="careers.html">Careers</a></li>
-                         </ul>
-                         </ul>
-                     </div>
-                     <div class="footer-col">
-                         <h4>Office Address</h4>
-                      <p><a href="https://www.google.com/maps/place/tsstechnologies/@12.8467969,77.6454114,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae6b001701e68f:0xfcfc02e742de621!8m2!3d12.8467917!4d77.6479863!16s%2Fg%2F11ldhv_xs8?entry=ttu">Banglore,Karnatraka,India</a></p>
-                     </div>
-                     <div class="footer-col">
-                         <h4>follow us</h4>
-                         <div class="social-links">
-                             <a href="https://www.facebook.com/profile.php?id=61556577814647&mibextid=LQQJ4d"><i class="fab fa-facebook-f"></i></a>
-                             <a href="https://twitter.com/TssTechies"><i class="fab fa-twitter"></i></a>
-                             <a href="https://www.instagram.com/tsstechies?igsh=OXpnZmg3enBmcGo0"><i class="fab fa-instagram"></i></a>
-                             <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-        </footer>
-        <script src="/assets/js/script.js"></script>
+        <div class="content">
+            <h2>Technical Support</h2>
+            <p> Technical support plays a pivotal role in ensuring client satisfaction and maintaining the smooth operation of services provided. Technical support teams are responsible for addressing client inquiries, troubleshooting issues, and providing assistance with the company's products or services. .</p>
+            <ul>
+                <li>Technical support provides assistance to customers who encounter issues or have questions about products or services. This assistance may be provided through various channels such as phone, email, live chat, or support tickets. </li>
+                <li> Technical support personnel diagnose technical problems reported by customers. They gather information about the issue, analyze symptoms, and identify potential causes to determine the appropriate solution.</li>
+                <li>  Technical support resolves customer issues by providing step-by-step instructions, troubleshooting techniques, or fixes for software bugs or hardware malfunctions. They aim to resolve issues efficiently to minimize customer downtime and frustration.</li>
+                <li>Technical support staff possess in-depth knowledge of the company's products or services. They stay updated on product features, functionalities, updates, and best practices to effectively assist customers and address their needs.</li>
+                <li>For complex or unresolved issues, technical support escalates cases to higher tiers or specialized teams within the organization. They ensure proper communication and coordination to expedite issue resolution and maintain customer satisfaction.</li>
+            </ul>
+            <h3>WHY CHOOSE US?</h3>
+            <li>Prompt and Efficient Service</li>
+            <li>Comprehensive Support</li>
+            <li>Multiple Support Channels</li>
+            <li>Proactive Support</li>
+            <li>Scalability and Flexibility</li>
+            <li>Expertise and Experience</li>
+        </div>
+    </div>
+
+    <!--end-->
+    
 </body>
 </html>

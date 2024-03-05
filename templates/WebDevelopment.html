@@ -4,24 +4,152 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TssTech</title>
-    <link rel="stylesheet" href="/assets/css/service.css">
+    <link rel="stylesheet" href="/assets/css/services.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+ @media only screen and (max-width: 768px) {
+        .content-container {
+
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center items vertically */
+        }
+        .tags, .content {
+            width: 100%; /* Take up full width */
+        }
+    }
+    
+        .image-container {
+            position: relative;
+            top: 0;
+            left: 0;
+            height: 500px;
+            width: 700px;
+            background-size: cover;
+            border-radius: 20px;
+           
+            text-align: center;
+            display: flex;
+            text-align: justify;
+            justify-content: space-between;
+            animation: imageAnimation 15s infinite;
+           
+        }
+        .image-text>h1{
+            position: relative; /* Position text absolutely */
+            top: 150px;
+            left: 10px; /* Adjust left position as needed */
+            bottom: 10px; /* Adjust bottom position as needed */
+            color:white; /* Set text color */
+            font-size: 50px; /* Set text size */
+            Font-family:Copperplate, Copperplate Gothic Light, fantasy;
+        }
+        .intro{
+            position: relative;
+            left: 400px;
+            justify-content: center;
+        }
+        .image-container>.intro>h1{
+        Font-family:Copperplate, Copperplate Gothic Light, fantasy;
+            font-size: 60px;
+             
+    }
+    .intro>p{
+        Font-family:Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
+            font-size: 20px;
+            text-align: center;
+
+    }
+        .content-container{
+            padding-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            
+        }
+        .content h2{
+            Font-family:Copperplate, Copperplate Gothic Light, fantasy;
+            font-size: 40px;
+        }
+        .content-container h2{
+            Font-family:Copperplate, Copperplate Gothic Light, fantasy;
+            font-size: 50px;
+            border-bottom: 4px ridge #000;
+            text-align: center;
+           
+        }
+        .content {
+        flex: 2; 
+        Font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
+        font-size: 18px;
+        line-height: 2;
+        text-align: justify;
+       }
+       .tags {
+        flex: 1;
+        margin-right: 20px;
+        Font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
+        font-size: 20px;
+        line-height: 2.5;
+        background-color:  #fff394;
+        border-radius: 150px;
+        padding: 10px 10px 10px 50px;   
+        animation: fadeIn 1.5s ease-in-out;                       
+    }
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .tag:hover {
+        transform: scale(1.1);
+    }
+
+
+
+        @keyframes imageAnimation {
+            0% {
+                background-image: url('https://res.cloudinary.com/dbmxe4x1r/image/upload/v1709533608/img4web_zxym8o.jpg');
+            }
+            25% {
+                background-image: url('https://res.cloudinary.com/dbmxe4x1r/image/upload/v1709536549/macbook-apple-imac-computer-39284_bi1pkk.jpg');
+            }
+            50% {
+                background-image: url('https://res.cloudinary.com/dbmxe4x1r/image/upload/v1709536682/Web-App-Development-Malaysia_snhww8.jpg');
+            }
+            75% {
+                background-image: url('https://res.cloudinary.com/dbmxe4x1r/image/upload/v1709536779/Web-app-development-2_bnnl4q.jpg');
+            }
+            100% {
+                background-image: url('https://res.cloudinary.com/dbmxe4x1r/image/upload/v1709533330/img1web_guii47.jpg');
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
+
+    <!--navber-->
+    <header id="navbar9">
         <input type ="checkbox" name ="" id ="chk1">
         <div class="logo">
             <img src="https://res.cloudinary.com/dccwhehhp/image/upload/v1709291309/img/logo-no-background_kqrt4t.png" alt="logo">
         </div>
             
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#about-section">About us</a></li>
-                <li><a href="index.html#services-section">Services</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about-section">About us</a></li>
+                <li><a href="#services-section">Services</a></li>
                 <li><a href="careers.html">Careers</a></li>
                 <li><a href="#footer-section">contact</a></li>
+                
             </ul>
             <div class="menu">
                 <label for="chk1">
@@ -29,76 +157,107 @@
                 </label>
             </div>
     </header>
-    <section class="fullwebbackground">
-    <div class="base"  >
-        <div class="banner">
-            <div class="serviceLHS">
-                <img src="https://res.cloudinary.com/dccwhehhp/image/upload/v1709291316/img/webDEv3_ord3sh.jpg"class="puff-in-center" alt="webDevelopment">
-            </div>
-            <div class="serviceRHS text-focus-in" >
-                <h2>Web Development</h2>
-                <p>Embark on a journey of digital innovation with our website development service</p>
-                <div class="learnMoreweb">
-                    <a href="#content"><button> Learn More</button></a>
-                </div>
-            </div>
+    
+    <!--start-->
+        <div class="image-container">
+            <div class="image-text"><h1>Web <br>Development</h1></div>
+            <div class="intro"><h1>What is web Development?</h1>
+                <p>Web development refers to the creating, building, and maintaining of websites. It includes aspects such as web design, web publishing, web programming, and database management. It is the creation of an application that works over the internet i.e. websites.</p></div>
         </div>
-        <div id="content" class="content focus-in-expand">
-            <h2>Why Choose Our Service</h2>
-            <p>We're the creative minds behind captivating online experiences, to meet your unique needs. From stylish designs that adapt flawlessly to any device to powerful features that engage and delight users.
-                We're committed to crafting websites that make a lasting impression. With our deep knowledge of the latest technologies and industry best practices, your online success is not just a possibility, but a certainty.
-                Dive into the world of website development with us. Whether you're seeking a static, dynamic, or responsive site, or require specialized services for e-commerce, business, finance, healthcare, portfolio, or travel, we have the expertise to bring your vision to life.</p>
+        <div class="content-container" style="padding-right: 30px;">
+        <div class="tags" >
+            <h2>Requirements</h2>
+            <ul>
+            <div class="tag"><i class='bx bx-chevrons-right'></i>IDEs</div>
+                <div class="tag"><i class='bx bx-chevrons-right'></i>Version Control</div>
+                    <div class="tag"><i class='bx bx-chevrons-right'></i>Frontend Frameworks</div>
+                        <div class="tag"><i class='bx bx-chevrons-right'></i>Backend Frameworks</div>
+                            <div class="tag"><i class='bx bx-chevrons-right'></i>Database Management Systems</div>
+                                <div class="tag"><i class='bx bx-chevrons-right'></i>Package Managers</div>
+                                    <div class="tag"><i class='bx bx-chevrons-right'></i>API Development and Testing</div>
+                                        <div class="tag"><i class='bx bx-chevrons-right'></i>Containerization</div>
+                                        <div class="tag"><i class='bx bx-chevrons-right'></i>Orchestration</div>
+                                            <div class="tag"><i class='bx bx-chevrons-right'></i>Testing Tools</div>
+                                                <div class="tag"><i class='bx bx-chevrons-right'></i>Build Tools</div>
+                                                    <div class="tag"><i class='bx bx-chevrons-right'></i>CI/CD</div>
+                                                        <div class="tag"><i class='bx bx-chevrons-right'></i>Code Quality</div>
+                                                            <div class="tag"><i class='bx bx-chevrons-right'></i>Browser Developer Tools</div>
+                                                                <div class="tag"><i class='bx bx-chevrons-right'></i>API Documentation</div>
+                                                                    <div class="tag"><i class='bx bx-chevrons-right'></i>Frontend Design Tools</div>
+                                                                        <div class="tag"><i class='bx bx-chevrons-right'></i>Performance Monitoring</div>
+                                                                         <div class="tag"><i class='bx bx-chevrons-right'></i>Security Tools</div>
+                                                                            <div class="tag"><i class='bx bx-chevrons-right'></i>Collaboration Tools</div>
+            <div class="tag"><i class='bx bx-chevrons-right'></i>Deployment</li>
+        </ul>
         </div>
-        <div class="tags">
-            <h2>What We Can Do</h2>
-       
-            <div class="tagweb" >Responsive Web Design</div>
-            <div class="tagweb">Static Website</div>
-            <div class="tagweb">Dynamic Website</div>
-            <div class="tagweb">Ecommerce</div>
-            <div class="tagweb">Blog</div>
-            <div class="tagweb">Custom Websites</div>
-            <div class="tagweb">Portfolio Website</div>
-            <div class="tagweb">Business Website</div>
-            <div class="tagweb">Personal Websites</div>
-            <div class="tagweb">Finance Websites</div>
-            <div class="tagweb">Many more...</div>
-       
+        <div class="content">
+            <h2>Web Application Development</h2>
+            <p>Web development encompasses the tasks associated with creating websites for hosting via intranet or internet. It involves various skills and disciplines in the production and maintenance of websites.</p>
+            <ul>
+                <li> Involves creating the visual and interactive elements of a website using HTML, CSS, and JavaScript.</li>
+                <li> Focuses on server-side programming, database management, and application logic using languages like Node.js, Python, and frameworks like Django and Express.js.</li>
+                <li>Encompasses both front-end and back-end development, requiring a comprehensive understanding of all aspects of web development.</li>
+                <li> Ensures websites adapt and display effectively on various devices and screen sizes through techniques like media queries and flexible layouts.</li>
+                <li>Includes code editors, version control systems like Git, and browser developer tools for testing and debugging code.</li>
+                <li> Technologies like React, Angular, Vue.js, and Bootstrap provide pre-built components and tools to streamline development.</li>
+                <li>Adherence to web standards, accessibility guidelines, and best practices for performance, security, and SEO is crucial in web development.</li>
+                <li>Progressive Web Apps (PWAs), serverless architecture, and the adoption of new web standards are shaping the future of web development.</li>
+            </ul>
+           <h3>WHY CHOOSE US?</h3>
+           <li>Highlight Unique Selling Proposition (USP)</li>
+           <li>Build Trust and Credibility</li>
+           <li>Address Pain Points</li>
+           <li>Showcase Expertise and Experience</li>
+           <li>Encourage Engagement</li>
+           <li>Humanize the Brand</li>
+           <li>Optimize for SEO</li>
+           
         </div>
     </div>
-</section>
-    <footer class="footer" id="footer-section">
-         <div class="container-foot">
-             <div class="row">
-                 <div class="footer-col">
-                     <a href="#"><h1>tss <br>Technologies</h1></a>
-                 </div>
-                 <div class="footer-col">
-                     <h4>Company</h4>
-                     <ul>
-                        <li><a href="index.html#about-section">About us</a></li>
-                        <li><a href="#technologies-section">Technologies</a></li>          
-                         <li><a href="index.html#services-section">Services</a></li>
-                        <li><a href="careers.html">Careers</a></li>
-                     </ul>
-                     </ul>
-                 </div>
-                 <div class="footer-col">
-                     <h4>Office Address</h4>
-                  <p><a href="https://www.google.com/maps/place/tsstechnologies/@12.8467969,77.6454114,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae6b001701e68f:0xfcfc02e742de621!8m2!3d12.8467917!4d77.6479863!16s%2Fg%2F11ldhv_xs8?entry=ttu">Banglore,Karnatraka,India</a></p>
-                 </div>
-                 <div class="footer-col">
-                     <h4>follow us</h4>
-                     <div class="social-links">
-                         <a href="https://www.facebook.com/profile.php?id=61556577814647&mibextid=LQQJ4d"><i class="fab fa-facebook-f"></i></a>
-                         <a href="https://twitter.com/TssTechies"><i class="fab fa-twitter"></i></a>
-                         <a href="https://www.instagram.com/tsstechies?igsh=OXpnZmg3enBmcGo0"><i class="fab fa-instagram"></i></a>
-                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                     </div>
-                 </div>
-             </div>
-         </div>
-    </footer>
-    <script src="/assets/js/script.js"></script>
+        
+    <!--end-->
+
+    <!--footer-->
+    <footer class="footer" id="footer-section" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+        <div class="container-foot">
+            <div class="row">
+                <div class="footer-col footer-col-company-name">
+                    <a href="#"><h1>tss <br>Technologies</h1></a>
+                </div>
+                <div class="footer-col footer-col-company">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about-section">About us</a></li>
+                        <li><a href="#technologies-section">Technologies</a></li>
+                        <li><a href="#services-section">Services</a></li>
+                        <li><a href="careers.html">careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-col-contact-info">
+                    <h4>Contact Info</h4>
+                    <p><i class="fa-sharp fa-solid fa-phone"></i><a> +91 9553767487</a></p>
+                </br>
+                    <p onclick="openGmailAndCall()" ><i class="fa-solid fa-envelope"></i><a> admincontact@tsstechnologies.com</a></p>
+                </br>
+                    <p><i class="fa-solid fa-location-dot"></i><a href="https://www.google.com/maps/place/tsstechnologies/@12.8467969,77.6454114,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae6b001701e68f:0xfcfc02e742de621!8m2!3d12.8467917!4d77.6479863!16s%2Fg%2F11ldhv_xs8?entry=ttu">   Banglore,Karnatraka,India</a></p>
+                </div>
+                <div class="footer-col footer-col-follow-us">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61556577814647&mibextid=LQQJ4d"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/TssTechies"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/tsstechies?igsh=OXpnZmg3enBmcGo0"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="backBtn none">
+            <a href="#" class="top"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+        
+   </footer>
+    
 </body>
 </html>
