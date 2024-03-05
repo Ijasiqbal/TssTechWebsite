@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-document.querySelector('.contactBtn').addEventListener('click', function() {
+document.querySelector('.contentContact').addEventListener('click', function() {
   document.getElementById('contactForm').classList.toggle('none');
   document.getElementById('contactForm').classList.toggle('show');
   

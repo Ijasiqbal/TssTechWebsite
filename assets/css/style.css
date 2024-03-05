@@ -7,7 +7,7 @@
 
 
   --headingFont: Copperplate, Copperplate Gothic Light, fantasy;
-  --paraFont: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
+  --paraFont: Lucida Bright,Georgia,serif;
 /*
   --shade1: #22223b;
   --shade2: #4a4e69;
@@ -20,6 +20,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  line-height: 1.5;
   a{
     all: unset;
   }
@@ -322,7 +323,10 @@ header .menu{
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-bottom: 100px;
+  padding-bottom: 180px;
+  padding-top: 30px;
+  max-height: 90vh;
+
   h1{
     font-size: 4.5em;
     color: var(--shade4);
@@ -344,6 +348,7 @@ header .menu{
   gap: 10%;
   justify-content: center;
 }
+
 @media screen and (max-width: 769px){
   .titleBase{
     padding-bottom: 200px;
@@ -369,6 +374,143 @@ header .menu{
 .content2::before {
   content: "Our Services";
 }
+/*loader*/
+.loader {
+  scale: 4;
+  height: 50px;
+  width: 40px;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.box {
+  position: relative;
+  opacity: 0.3;
+  left: 10px;
+  top: 50px;
+  
+}
+
+.side-left {
+  position: absolute;
+  background-color: #286cb585;
+  width: 19px;
+  height: 5px;
+  transform: skew(0deg, -25deg);
+  top: 14px;
+  left: 10px;
+}
+
+.side-right {
+  position: absolute;
+  background-color: #2f85e085;
+  width: 19px;
+  height: 5px;
+  transform: skew(0deg, 25deg);
+  top: 14px;
+  left: -9px;
+}
+
+.side-top {
+  position: absolute;
+  background-color: #5fa8f585;
+  width: 20px;
+  height: 20px;
+  rotate: 45deg;
+  transform: skew(-20deg, -20deg);
+}
+
+.box-1 {
+  animation: from-left 4s infinite;
+}
+
+.box-2 {
+  animation: from-right 4s infinite;
+  animation-delay: 1s;
+}
+
+.box-3 {
+  animation: from-left 4s infinite;
+  animation-delay: 2s;
+}
+
+.box-4 {
+  animation: from-right 4s infinite;
+  animation-delay: 3s;
+}
+
+@keyframes from-left {
+  0% {
+    z-index: 20;
+    opacity: 0;
+    translate: -20px -6px;
+  }
+
+  20% {
+    z-index: 10;
+    opacity: 1;
+    translate: 0px 0px;
+  }
+
+  40% {
+    z-index: 9;
+    translate: 0px 4px;
+  }
+
+  60% {
+    z-index: 8;
+    translate: 0px 8px;
+  }
+
+  80% {
+    z-index: 7;
+    opacity: 1;
+    translate: 0px 12px;
+  }
+
+  100% {
+    z-index: 5;
+    translate: 0px 30px;
+    opacity: 0;
+  }
+}
+
+@keyframes from-right {
+  0% {
+    z-index: 20;
+    opacity: 0;
+    translate: 20px -6px;
+  }
+
+  20% {
+    z-index: 10;
+    opacity: 1;
+    translate: 0px 0px;
+  }
+
+  40% {
+    z-index: 9;
+    translate: 0px 4px;
+  }
+
+  60% {
+    z-index: 8;
+    translate: 0px 8px;
+  }
+
+  80% {
+    z-index: 7;
+    opacity: 1;
+    translate: 0px 12px;
+  }
+
+  100% {
+    z-index: 5;
+    translate: 0px 30px;
+    opacity: 0;
+  }
+}
+
 
 
 /* end Title section */
@@ -391,9 +533,11 @@ header .menu{
   border: 2px solid var(--shade3);
   h1{
     font-family: var(--headingFont);
+    padding-bottom: 10px;
   }
   p{
     font-family: var(--paraFont);
+    line-height: 1.5;
   }
 
 }
@@ -805,13 +949,14 @@ img{
 .base{
   margin-top: 1px;
   background-color: var(--shade1);
-  font-family: 'Be Vietnam Pro', sans-serif;
+  font-family: var(--paraFont);
 }
 .technologiesH2 h2{
   font-size: 3em;
   color: var(--shade4);
  padding-top: 20px;
   text-align: center;
+  font-family: var(--headingFont);
   
 }
 .sliding{
@@ -911,12 +1056,12 @@ img{
 
 .body{
   margin: auto;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   overflow: auto;
   background: var(--shade1);
   animation: gradient 15s ease infinite;
   background-size: 400% 400%;
   background-attachment: fixed;
+  font-family: var(--paraFont);
 }
 
 @keyframes gradient {
@@ -995,6 +1140,9 @@ img{
   width: 90%;
   margin: 0 auto;
   max-width: 80rem;
+  h1{
+    font-family: var(--headingFont);
+  }
 }
 
 .body .wrapper-s .cols {
@@ -1093,6 +1241,7 @@ img{
   -webkit-perspective: inherit;
   perspective: inherit;
   z-index: 2;
+  
 }
 
 .container-s .back {
@@ -1178,6 +1327,7 @@ ul{
 }
 .footer-col{
    width: 25%;
+   
    padding: 0 15px;
 }
 .footer-col a{
@@ -1216,7 +1366,7 @@ ul{
 }
 .footer-col ul li a{
 	font-size: 16px;
-	text-transform: capitalize;
+	 
 	color: #ffffff;
 	text-decoration: none;
 	font-weight: 300;
@@ -1229,6 +1379,7 @@ ul{
 	color: var(--shade1);
 	padding-left: 8px;
 }
+ 
 .footer-col .social-links a{
 	display: inline-block;
 	height: 40px;
@@ -1498,6 +1649,9 @@ background: #5029bc;
 
 .container-contact.show {
   opacity: 1;
+}
+.contentContact::before{
+  content: "Click to contact us";
 }
 /*end contact form*/
 
