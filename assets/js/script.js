@@ -61,3 +61,9 @@ document.querySelector('.contentContact').addEventListener('click', function() {
   
 });
 
+window.addEventListener("scroll", function() {
+  var scroll = window.pageYOffset;
+  document.getElementById("backgroundGiff").style.top = -(scroll * 0.5) + "px";
+  document.getElementById("TitleText").style.top = -(scroll * 0.2) + "px";
+});
+
