@@ -21,6 +21,7 @@
   font-family: var(--headingFont)
   a{
     all: unset;
+    text-decoration: none;
   }
   scroll-behavior: smooth;
 } 
@@ -28,7 +29,16 @@
 body{
     background-color: var(--shade1);
     width: 100%;
+    a{
+      all: unset;
+      text-decoration: none;
+
+    }
     
+}
+a{
+  text-decoration: none;!important;
+  all:unset;!important;
 }
 /*navbar*/
 header.black {
@@ -1347,7 +1357,7 @@ border: 1px solid var(--shade3);
     padding-bottom: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 1.3px;
-    font-family: var(--headingFont);
+    font-family: var(--paraFont);
   }
   .sub-heading
   {
