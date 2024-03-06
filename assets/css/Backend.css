@@ -1,8 +1,17 @@
 /* Global styles */
+:root{
+   
+  
+    --headingFont: Copperplate, Copperplate Gothic Light, fantasy;
+    --paraFont:Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
+  
+  }
+  
 body {
     margin: 0;
-    Font-family: Copperplate, Copperplate Gothic Light, fantasy;
+    font-family: var(--paraFont);
     background-color: #f0f0f0;
+    line-height: 1.7;
 }
 
 .container {
@@ -57,6 +66,7 @@ body {
 }
 
 .image-heading {
+    font-family: var(--headingFont);
     color: white;
 }
 
@@ -66,9 +76,9 @@ body {
 }
 
 .intro p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
-    color: #333;
+    color: #000000;
 }
 
 .content-container {
@@ -76,13 +86,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-left: 50px;
 }
 
 .tags {
     margin-bottom: 20px;
     background-color: yellow;
     /* Background color set to yellow */
-    padding: 20px;
+    padding-left: 80px;
     /* Added padding for better appearance */
     border-radius: 40px;
     /* Added border-radius for rounded corners */
@@ -117,6 +128,7 @@ body {
     list-style: none;
     padding: 0;
     margin-bottom: 20px;
+    font-size: 18px;
 }
 
 .content ul li {
@@ -175,11 +187,18 @@ body {
     .tags {
         width: 30%;
         margin-right: 20px;
+        padding-left: 10px;
     }
+
+    .newtag
+        {
+            padding-left: 10px;
+        }
+
 
     .content{
         width: 65%;
-        padding: 0 7%;
+        padding: 10px;
     }
 
     .content h2 {
@@ -201,4 +220,5 @@ body {
     .content h3 {
         font-size: 30px;
     }
+    
 }
