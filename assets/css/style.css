@@ -346,8 +346,9 @@ header .menu{
   margin-top: 25px;
   display: flex;
   flex-direction: row;
-  gap: 10%;
+  gap: 20px;
   justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 769px){
@@ -551,7 +552,7 @@ img{
 
 @media screen and (max-width: 1200px){
   .aboutBase{
-    height: 700px;
+    height: 800px;
   }
   .aboutHeading{
     left: 40%;
@@ -566,7 +567,7 @@ img{
 }
 @media screen and (max-width: 1000px){
   .aboutBase{
-    height: 800px;
+    height: 900px;
   }
   .aboutHeading{
     top: -250px;
@@ -583,7 +584,7 @@ img{
 }
 @media screen and (max-width: 769px){
   .aboutBase{
-    height: 1000px;
+    height: 1100px;
   }
   .aboutHeading{
     top: -100px;
@@ -674,8 +675,7 @@ img{
   background-color: var(--shade1);
   border-radius: 10px;
   overflow: hidden;
-  padding: 50px 5%;
-  padding-left: 2%;
+  padding: 50px 7%;
   border: 10px solid linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a);
   
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -688,6 +688,7 @@ img{
   /* Increase the size of the gradient */
   animation: gradientAnimation 5s ease infinite;
   /* Control the speed of the animation */
+
 }
 
 
@@ -1192,8 +1193,8 @@ img{
 .back {
   background: #cedce7;
   background: -webkit-linear-gradient(45deg, #cedce7 0%, #596a72 100%);
-  background: -o-linear-gradient(45deg, #7888DE 0%, #ABDBE6 100%);
-  background: linear-gradient(45deg, #7888DE 0%, #ABDBE6 100%);
+  background: -o-linear-gradient(45deg, #191641 0%, #191641 100%);
+  background: linear-gradient(45deg, #191641 0%, #191641 100%);
 }
 
 .front:after {
