@@ -24,7 +24,7 @@
     text-decoration: none;
   }
   scroll-behavior: smooth;
-} 
+  } 
 
 body{
     background-color: var(--shade1);
@@ -308,7 +308,7 @@ header .menu{
   align-items: center;
   max-width: 850;
   padding: 0 5%;
-}
+  }
 
 @media screen and (min-width:768px) {
   .move-messenger-carrer {
@@ -761,7 +761,7 @@ ul{
 .footer{
 	background-color: var(--shade4);
     padding: 70px 0;
-}
+    }
 .footer-col{
    width: 25%;
    padding: 0 5px;
@@ -910,7 +910,7 @@ table {
   border-radius: 50px;
   padding: 100px; /* Add padding to the sides of the table */
   margin-bottom: 50px;
-  background-color: rgba(221, 229, 236, 0.688);
+  background-color: rgba(249, 251, 253, 0.692);
   font-family: var(--paraFont);
   
 }
@@ -1095,6 +1095,17 @@ background: #5029bc;
   font-size: 60px;
   color: var(--shade4);
   margin: 25px;
+}
+.wrapper h3{
+  font-size: 20px;
+  color: var(--shade3);
+  margin: 25px;
+  cursor: pointer;
+   
+}
+.wrapper span{
+  color: #ffffff;
+  text-decoration:underline;
 }
 .content-box{
   display: flex;
@@ -1307,6 +1318,7 @@ border: 1px solid var(--shade3);
     
       flex-direction: column;
       width: 100%;
+      padding: 30px;
   }
   .welcome .box-container .box
   {
@@ -1316,11 +1328,37 @@ border: 1px solid var(--shade3);
     text-align: center;
     padding-bottom:1% ;
     border-radius: 2%;
+   
   }
+
     li
     {
       font-size: smaller;
     }
+
+    .welcome .box-container .box
+    {
+      width: 300px;
+      height: 530px;
+      background-color: var(--shade3);
+      box-shadow: #151516;
+      text-align: center;
+      padding-bottom:1% ;
+      border-radius: 2%;
+    }
+}
+
+@media screen and (max-width: 368px) {
+  .welcome .box-container .box
+  {
+    width: 250px;
+    height: 530px;
+    box-shadow: #151516;
+    text-align: center;
+    padding-bottom:1% ;
+    border-radius: 2%;
+   
+  }
 }
 @keyframes slide-in-text {
   from {
@@ -1374,11 +1412,13 @@ border: 1px solid var(--shade3);
   .welcome .box-container
   { 
     padding-top: 40PX;
-    padding-left: 100PX;
+    padding-left: 50PX;
+    justify-content: center;
     display: flex;
     gap: 1rem;
     align-items: center;
     padding-right: 50px;
+    width: 100%;
   }
   .welcome .box-container .box
   {
@@ -1478,7 +1518,7 @@ border: 1px solid var(--shade3);
   #services-section
   {
     background-image: url("https://res.cloudinary.com/dcxsrmupm/image/upload/v1709623508/Screenshot_2024-03-05_125349_xtkmay.png"); 
-     
+    
     z-index: -1; 
     background-size: cover;
     backdrop-filter: blur(10px);

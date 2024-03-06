@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-  </head>
+  </head>  
   <body>
     <!--navber-->
     <header id="navbar9">
@@ -470,41 +470,31 @@
                 </div>
             </div>
         </div>
-        <div class="contactBtnDiv" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
-            <button class="Btn contentContact" id="contactBtn"></button>
-            
-        </div>
+        <div class="titleBtns">
+            <a href="#contactBtn" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
+                <button class="Btn content1" id="contactBtn" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">Contact us</button>
+            </a>
         </div>
         </div>
     <!--contact form-->
     
-    
-    <div class="container-contact none" id="contactForm">
-     
-        <div class="content-contact" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
-          <div class="right-side" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
-            <div class="topic-text"><h2 data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">Send us a message</h2></div>
-            <p data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">Tell us about your project our executives will reach out to understand your needs.</p>
-          <form action="#" id="myForm">
-            <div class="input-box" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
-              <input type="text" placeholder="Enter your name *" required name="name" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
-            </div>
-            <div class="input-box" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
-              <input type="number" placeholder="Enter your Mobile"  name="Mobile" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
-            </div>
-            <div class="input-box" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
-                <input type="email" placeholder="Enter your Email *" required name="email" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
-              </div>
-            <div class="input-box message-box" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
-                <input type="text" placeholder="Write a message..." required name="message" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
-            </div>
-            <div class="button-contact" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
-              <input type="submit" value="Send Now" id="success" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
-            </div>
-          </form>
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close-btn" id="close-popup">&times;</span>
+            <h2>Contact Us</h2>
+            <form action="" name="submit-to-google-sheet">
+                <label>Name <sup class="required-field">*</sup></label>
+                <input type="text" name="name" placeholder=" Enter Your Name..." required>
+                <label>Mobile</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter Your Mobile..." pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+                <small>Format: 1234567890</small>
+                <label>Email <sup class="required-field">*</sup></label>
+                <input type="email" name="email" placeholder="Enter Your Email..." required>
+                <label>Message</label>
+                <textarea name="message" placeholder="Enter Your Message..."></textarea>
+                <input type="submit" value="Submit" name="submit" id="submit">
+            </form>
         </div>
-        </div>
-      </div>
     </div>
     <!--end contact form-->
     <!--footer-->
@@ -528,9 +518,9 @@
                     <h4>Contact Info</h4>
                     <p><i class="fa-sharp fa-solid fa-phone"></i><a> +91 9553767487</a></p>
                 </br>
-                    <p onclick="openGmailAndCall()" ><i class="fa-solid fa-envelope"></i><a> admincontact@tsstechnologies.com</a></p>
+                    <p onclick="openGmailAndCall()" ><i class="fa-solid fa-envelope"></i><a> admincontact@tsstechnologies.in</a></p>
                 </br>
-                    <p><i class="fa-solid fa-location-dot"></i><a href="https://www.google.com/maps/place/tsstechnologies/@12.8467969,77.6454114,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae6b001701e68f:0xfcfc02e742de621!8m2!3d12.8467917!4d77.6479863!16s%2Fg%2F11ldhv_xs8?entry=ttu">   Banglore,Karnatraka,India</a></p>
+                    <p><i class="fa-solid fa-location-dot"></i><a href="https://www.google.com/maps/place/tsstechnologies/@12.8467969,77.6454114,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae6b001701e68f:0xfcfc02e742de621!8m2!3d12.8467917!4d77.6479863!16s%2Fg%2F11ldhv_xs8?entry=ttu">   Banglore,karnataka,India</a></p>
                 </div>
                 <div class="footer-col footer-col-follow-us">
                     <h4>follow us</h4>
@@ -559,6 +549,26 @@
             duration: 1500,
             once: false,
         });
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw2p1d8YkCD1Sa-qLQZsjaEEutWuHs1_HNJZCnHJ3XdnPjscQNtvuJaHwNqASTOTRU/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const popup = document.getElementById('popup');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => {
+                    console.log('Success!', response);
+
+                    alert('Form submitted successfully!');
+
+                    popup.style.display = 'none';
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
     </script>
 
       </body>
