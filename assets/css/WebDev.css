@@ -1,11 +1,12 @@
+body{
+    width: 100%;
+}
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    padding-top: 100px;
-    
-    
 }
 
 .image-container {
@@ -42,41 +43,6 @@
     }
 }
 
-@media only screen and (min-width: 768px) {
-    .container {
-        flex-direction: row;
-        align-items: flex-start;
-    }
-
-
-
-    .image-container {
-        height: 450px;
-        width: 1500px;
-        background-size: cover;
-        border-radius: 20px;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-self: flex-start;
-        animation: imageAnimation 15s infinite;
-    }
-
-    .image-heading {
-        color: white;
-    }
-
-    .intro>h1 {
-        Font-family: Copperplate, Copperplate Gothic Light, fantasy;
-        font-size: 20px;
-    }
-
-    .intro>p {
-        Font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
-        font-size: 15px;
-    }
-}
-
 .intro {
     display: flex;
     flex-direction: column;
@@ -84,85 +50,146 @@
     margin: 10px;
 }
 
-.intro>h1 {
-    Font-family: Copperplate, Copperplate Gothic Light, fantasy;
-    font-size: 60px;
+.image-heading {
+    color: white;
 }
 
-.intro>p {
-    Font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
-    font-size: 20px;
+.intro h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 768px) {
-    .content-container {
-
-        flex-direction: column;
-        /* Stack items vertically */
-        align-items: center;
-        /* Center items vertically */
-    }
-
-    .tags,
-    .content {
-        width: 100%;
-        /* Take up full width */
-    }
+.intro p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
 }
 
 .content-container {
     padding-top: 40px;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-
-}
-
-.content h2 {
-    Font-family: Copperplate, Copperplate Gothic Light, fantasy;
-    font-size: 40px;
-}
-
-.content-container h2 {
-    Font-family: Copperplate, Copperplate Gothic Light, fantasy;
-    font-size: 50px;
-    border-bottom: 4px ridge #000;
-    text-align: center;
-
-}
-
-.content {
-    flex: 2;
-    Font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
-    font-size: 18px;
-    line-height: 2;
-    text-align: justify;
+    flex-direction: column;
+    align-items: center;
 }
 
 .tags {
-    flex: 1;
-    margin-right: 20px;
-    Font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
-    font-size: 20px;
-    line-height: 2.5;
-    background-color: #fff394;
-    border-radius: 150px;
-    padding: 10px 10px 10px 50px;
-    animation: fadeIn 1.5s ease-in-out;
+    margin-bottom: 20px;
+    background-color: yellow;
+    /* Background color set to yellow */
+    padding: 20px;
+    /* Added padding for better appearance */
+    border-radius: 40px;
+    /* Added border-radius for rounded corners */
 }
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.tags h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 
-.tag:hover {
-    transform: scale(1.1);
+.tags ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tags ul li {
+    margin-bottom: 10px;
+}
+
+.content h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.content ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.content ul li {
+    margin-bottom: 10px;
+}
+
+.content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.content ul li {
+    margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .image-container {
+        height: 450px;
+        width: 50%;
+        border-radius: 20px;
+        margin-right: 20px;
+    }
+
+    .intro {
+        width: 50%;
+        margin-left: 20px;
+    }
+
+    .intro h1 {
+        font-size: 40px;
+    }
+
+    .intro p {
+        font-size: 18px;
+    }
+
+    .content-container {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-top: 80px;
+    }
+
+    .tags {
+        width: 30%;
+        margin-right: 20px;
+    }
+
+    .content {
+        width: 65%;
+    }
+
+    .content h2 {
+        font-size: 40px;
+    }
+
+    .content p {
+        font-size: 18px;
+    }
+
+    .content ul {
+        margin-bottom: 30px;
+    }
+
+    .content ul li {
+        margin-bottom: 15px;
+    }
+
+    .content h3 {
+        font-size: 30px;
+    }
 }
