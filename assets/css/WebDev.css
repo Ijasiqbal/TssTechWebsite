@@ -7,6 +7,7 @@ body{
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    padding-top: 100px;
 }
 
 .image-container {
@@ -94,6 +95,9 @@ body{
 
 .tags ul li {
     margin-bottom: 10px;
+}
+.content{
+    padding: 50px 7%;
 }
 
 .content h2 {
