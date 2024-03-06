@@ -91,7 +91,7 @@ body {
 
 .tags {
     margin-bottom: 20px;
-    background-color: yellow;
+    background-color: rgb(17, 35, 116);
     /* Background color set to yellow */
     padding-left: 80px;
     /* Added padding for better appearance */
@@ -102,11 +102,13 @@ body {
 .tags h2 {
     font-size: 30px;
     margin-bottom: 10px;
+    color: white;
 }
 
 .tags ul {
     list-style: none;
     padding: 0;
+    color: white;
 }
 
 .tags ul li {
