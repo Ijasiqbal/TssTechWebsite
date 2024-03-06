@@ -1096,6 +1096,17 @@ background: #5029bc;
   color: var(--shade4);
   margin: 25px;
 }
+.wrapper h3{
+  font-size: 20px;
+  color: var(--shade3);
+  margin: 25px;
+  cursor: pointer;
+   
+}
+.wrapper span{
+  color: #ffffff;
+  text-decoration:underline;
+}
 .content-box{
   display: flex;
   justify-content: space-between;
@@ -1237,7 +1248,7 @@ border: 1px solid var(--shade3);
   }
   .welcome .box-container .box
   {
-    width: 10s0%;
+    width: 100%;
     background-color: var(--shade3);
     box-shadow: #151516;
     text-align: center;
