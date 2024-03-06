@@ -54,11 +54,20 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+document.getElementById('contactBtn').addEventListener('click', function() {
+  document.getElementById('popup').style.display = 'block';
+});
 
-document.querySelector('.contentContact').addEventListener('click', function() {
-  document.getElementById('contactForm').classList.toggle('none');
-  document.getElementById('contactForm').classList.toggle('show');
-  
+document.getElementById('close-popup').addEventListener('click', function() {
+  document.getElementById('popup').style.display = 'none';
+});
+
+// Close popup when clicking outside of it
+window.addEventListener('click', function(event) {
+  var popup = document.getElementById('popup');
+  if (event.target == popup) {
+      popup.style.display = 'none';
+  }
 });
 
 window.addEventListener("scroll", function() {
