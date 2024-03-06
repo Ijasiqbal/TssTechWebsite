@@ -374,7 +374,6 @@ input[type="checkbox"]{
 /*footer*/
 .container-foot{
   padding-left: 5%;
-  padding-right: 5%;
 	
 }
 .row{
@@ -389,7 +388,7 @@ ul{
     padding: 70px 0;
 }
 .footer-col{
-   width: 25%;
+   width: 20%;
    padding-left: 15px;
 }
 .footer-col a{
