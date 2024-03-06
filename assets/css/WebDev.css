@@ -1,0 +1,195 @@
+body{
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.image-container {
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-self: flex-start;
+    animation: imageAnimation 15s infinite;
+}
+
+@keyframes imageAnimation {
+    0% {
+        background-image: url('https://res.cloudinary.com/dbmxe4x1r/image/upload/v1709533608/img4web_zxym8o.jpg');
+    }
+
+    25% {
+        background-image: url('https://res.cloudinary.com/dbmxe4x1r/image/upload/v1709536549/macbook-apple-imac-computer-39284_bi1pkk.jpg');
+    }
+
+    50% {
+        background-image: url('https://res.cloudinary.com/dbmxe4x1r/image/upload/v1709536682/Web-App-Development-Malaysia_snhww8.jpg');
+    }
+
+    75% {
+        background-image: url('https://res.cloudinary.com/dbmxe4x1r/image/upload/v1709536779/Web-app-development-2_bnnl4q.jpg');
+    }
+
+    100% {
+        background-image: url('https://res.cloudinary.com/dbmxe4x1r/image/upload/v1709533330/img1web_guii47.jpg');
+    }
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px;
+}
+
+.image-heading {
+    color: white;
+}
+
+.intro h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.content-container {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tags {
+    margin-bottom: 20px;
+    background-color: yellow;
+    /* Background color set to yellow */
+    padding: 20px;
+    /* Added padding for better appearance */
+    border-radius: 40px;
+    /* Added border-radius for rounded corners */
+}
+
+.tags h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.tags ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tags ul li {
+    margin-bottom: 10px;
+}
+
+.content h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.content ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.content ul li {
+    margin-bottom: 10px;
+}
+
+.content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.content ul li {
+    margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .image-container {
+        height: 450px;
+        width: 50%;
+        border-radius: 20px;
+        margin-right: 20px;
+    }
+
+    .intro {
+        width: 50%;
+        margin-left: 20px;
+    }
+
+    .intro h1 {
+        font-size: 40px;
+    }
+
+    .intro p {
+        font-size: 18px;
+    }
+
+    .content-container {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-top: 80px;
+    }
+
+    .tags {
+        width: 30%;
+        margin-right: 20px;
+    }
+
+    .content {
+        width: 65%;
+    }
+
+    .content h2 {
+        font-size: 40px;
+    }
+
+    .content p {
+        font-size: 18px;
+    }
+
+    .content ul {
+        margin-bottom: 30px;
+    }
+
+    .content ul li {
+        margin-bottom: 15px;
+    }
+
+    .content h3 {
+        font-size: 30px;
+    }
+}

@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 :root{
-  --shade1: #fde5d8;
-  --shade2: #f2e9e4;
+  --shade1: white;
+  --shade2: white;
   --shade3: #4a4e69;
-  --shade4: #22223b;
+  --shade4: #191641;
 
 
   --headingFont: Copperplate, Copperplate Gothic Light, fantasy;
@@ -683,7 +683,7 @@ img{
   color: var(--shade1);
   /* Text color */
   position: relative;
-  background: linear-gradient(135deg, #944cba,#22223b , #944cba, #22223b);
+  background: linear-gradient(135deg, #191641,#353535 , #191641, #353535);
   background-size: 400% 400%;
   /* Increase the size of the gradient */
   animation: gradientAnimation 5s ease infinite;
@@ -1312,8 +1312,9 @@ img{
 }
 /*footer*/
 .container-foot{
-	max-width: 1170px;
-	margin:auto;
+  padding-left: 5%;
+  padding-right: 5%;
+	
 }
 .row{
 	display: flex;
@@ -1328,8 +1329,7 @@ ul{
 }
 .footer-col{
    width: 25%;
-   
-   padding: 0 15px;
+   padding-left: 15px;
 }
 .footer-col a{
 	text-decoration: none;
@@ -1398,7 +1398,6 @@ ul{
 	background-color: #4d4747;
 }
 
-/*responsive*/
 @media(max-width: 767px){
   .footer-col{
     width: 50%;
@@ -1410,6 +1409,8 @@ ul{
     width: 100%;
 }
 }
+/*end footer*/
+
 /*About us*/
 
 /*top button*/
