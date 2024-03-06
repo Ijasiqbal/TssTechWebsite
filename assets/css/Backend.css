@@ -1,0 +1,168 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    padding-top: 100px;
+}
+
+.image-container {
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-self: flex-start;
+    animation: imageAnimation 15s infinite;
+}
+
+
+@keyframes imageAnimation {
+    0% {
+        background-image: url('https://res.cloudinary.com/dbmxe4x1r/image/upload/v1709622600/html-css-collage-concept_23-2150061955_zqeycd.jpg');
+    }
+
+    25% {
+        background-image: url('https://res.cloudinary.com/dbmxe4x1r/image/upload/v1709622696/bs1_qgw2wa.jpg');
+    }
+
+    50% {
+        background-image: url('https://res.cloudinary.com/dbmxe4x1r/image/upload/v1709622687/bs_anayjb.jpg');
+    }
+
+    75% {
+        background-image: url('https://res.cloudinary.com/dbmxe4x1r/image/upload/v1709622581/bs_fwbc9h.jpg');
+    }
+
+    100% {
+        background-image: url('https://res.cloudinary.com/dbmxe4x1r/image/upload/v1709622560/pexels-photo-270637_ozbr0y.webp');
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+
+
+    .image-container {
+        height: 450px;
+        width: 1500px;
+        background-size: cover;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-self: flex-start;
+        animation: imageAnimation 15s infinite;
+    }
+
+    .image-heading {
+        color: white;
+    }
+
+    .intro>h1 {
+        Font-family: Copperplate, Copperplate Gothic Light, fantasy;
+        font-size: 20px;
+    }
+
+    .intro>p {
+        Font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
+        font-size: 15px;
+    }
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px;
+}
+
+.intro>h1 {
+    Font-family: Copperplate, Copperplate Gothic Light, fantasy;
+    font-size: 60px;
+}
+
+.intro>p {
+    Font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .content-container {
+
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: center;
+        /* Center items vertically */
+    }
+
+    .tags,
+    .content {
+        width: 100%;
+        /* Take up full width */
+    }
+}
+
+.content-container {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.content h2 {
+    Font-family: Copperplate, Copperplate Gothic Light, fantasy;
+    font-size: 40px;
+}
+
+.content-container h2 {
+    Font-family: Copperplate, Copperplate Gothic Light, fantasy;
+    font-size: 50px;
+    border-bottom: 4px ridge #000;
+    text-align: center;
+
+}
+
+.content {
+    flex: 2;
+    Font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
+    font-size: 18px;
+    line-height: 2;
+    text-align: justify;
+}
+
+.tags {
+    flex: 1;
+    margin-right: 20px;
+    Font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
+    font-size: 20px;
+    line-height: 2.5;
+    background-color: #fff394;
+    border-radius: 150px;
+    padding: 10px 10px 10px 50px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.tag:hover {
+    transform: scale(1.1);
+}
