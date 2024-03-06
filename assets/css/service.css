@@ -19,7 +19,6 @@ body{
  
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: 'Be Vietnam Pro', sans-serif;
 }
 header.black {
   background: var(--shade4);
@@ -147,7 +146,6 @@ background-repeat: no-repeat;
 }
 .base{
   padding: 100px 7%;
-  font-family: 'Be Vietnam Pro', sans-serif;
   a{
       text-decoration: none;
       color: black;
