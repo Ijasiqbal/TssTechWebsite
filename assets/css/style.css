@@ -96,6 +96,7 @@ header .menu{
 .logo img{
   width: 100px;
   filter: invert(100%);
+  cursor: pointer;
   
 }
 @media(max-width:1000px){
