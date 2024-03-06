@@ -91,7 +91,8 @@ body {
 
 .tags {
     margin-bottom: 20px;
-    background-color: rgb(17, 35, 116);
+    background-color: #191641;
+    ;
     /* Background color set to yellow */
     padding-left: 80px;
     /* Added padding for better appearance */
@@ -133,8 +134,10 @@ body {
     font-size: 18px;
 }
 
-.content ul li {
+.content li {
     margin-bottom: 10px;
+    font-size: 18px;
+    line-height: normal;
 }
 
 .content h3 {
