@@ -1,17 +1,13 @@
-/* Global styles */
 :root{
    
-  
     --headingFont: Copperplate, Copperplate Gothic Light, fantasy;
     --paraFont:Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
   
   }
-  
-body {
+body{
     margin: 0;
-    font-family: var(--paraFont);
+    Font-family: Copperplate, Copperplate Gothic Light, fantasy;
     background-color: #f0f0f0;
-    line-height: 1.7;
 }
 
 .container {
@@ -33,7 +29,6 @@ body {
     align-self: flex-start;
     animation: imageAnimation 15s infinite;
 }
-
 
 @keyframes imageAnimation {
     0% {
@@ -66,7 +61,6 @@ body {
 }
 
 .image-heading {
-    font-family: var(--headingFont);
     color: white;
 }
 
@@ -76,9 +70,10 @@ body {
 }
 
 .intro p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5;
-    color: #000000;
+    color: #333;
+    font-family: var(--paraFont);
 }
 
 .content-container {
@@ -86,34 +81,37 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 50px;
+    padding: 0 8%;
+    padding-bottom: 40px;
 }
 
 .tags {
     margin-bottom: 20px;
     background-color: #191641;
-    ;
     /* Background color set to yellow */
-    padding-left: 80px;
+    padding: 20px;
     /* Added padding for better appearance */
     border-radius: 40px;
     /* Added border-radius for rounded corners */
+    color: white;
 }
 
 .tags h2 {
     font-size: 30px;
     margin-bottom: 10px;
-    color: white;
 }
 
 .tags ul {
     list-style: none;
     padding: 0;
-    color: white;
+    font-family: var(--paraFont);
 }
 
 .tags ul li {
     margin-bottom: 10px;
+}
+.content{
+    padding: 50px 7%;
 }
 
 .content h2 {
@@ -125,24 +123,27 @@ body {
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 20px;
+    font-family: var(--paraFont);
 }
 
 .content ul {
     list-style: none;
     padding: 0;
     margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .content li {
     margin-bottom: 10px;
-    font-size: 18px;
+    font-size: 20px;
     line-height: normal;
+    font-family: var(--paraFont);
 }
 
 .content h3 {
     font-size: 24px;
     margin-bottom: 10px;
+    font-family: var(--paraFont);
 }
 
 .content ul {
@@ -153,9 +154,7 @@ body {
 .content ul li {
     margin-bottom: 10px;
 }
-.content {
-    padding: 50px 7%;
-}
+
 @media only screen and (min-width: 768px) {
     .container {
         flex-direction: row;
@@ -192,18 +191,10 @@ body {
     .tags {
         width: 30%;
         margin-right: 20px;
-        padding-left: 10px;
     }
-
-    .newtag
-        {
-            padding-left: 10px;
-        }
-
 
     .content{
         width: 65%;
-        padding: 10px;
     }
 
     .content h2 {
