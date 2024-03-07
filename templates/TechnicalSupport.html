@@ -23,7 +23,7 @@
                 <li><a href="index.html#about-section">About us</a></li>
                 <li><a href="index.html#services-section">Services</a></li>
                 <li><a href="careers.html">Careers</a></li>
-                <li><a href="#footer-section">contact</a></li>
+                <li><a id="contactBtn">contact</a></li>
             </ul>
             <div class="menu">
                 <label for="chk1">
@@ -31,6 +31,27 @@
                 </label>
             </div>
     </header>
+    <!--contact form-->
+    
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close-btn" id="close-popup">&times;</span>
+            <h2>Contact Us</h2>
+            <form action="" name="submit-to-google-sheet">
+                <label>Name <sup class="required-field">*</sup></label>
+                <input type="text" name="name" placeholder=" Enter Your Name..." required>
+                <label>Mobile</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter Your Mobile..." pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+                <small>Format: 1234567890</small>
+                <label>Email <sup class="required-field">*</sup></label>
+                <input type="email" name="email" placeholder="Enter Your Email..." required>
+                <label>Message</label>
+                <textarea name="message" placeholder="Enter Your Message..."></textarea>
+                <input type="submit" value="Submit" name="submit" id="submit">
+            </form>
+        </div>
+    </div>
+    <!--end contact form-->
     <!--start-->
     <div class="container">
         <div class="image-container">
@@ -120,5 +141,41 @@
         
    </footer>
         <script src="/assets/js/script.js"></script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbw2p1d8YkCD1Sa-qLQZsjaEEutWuHs1_HNJZCnHJ3XdnPjscQNtvuJaHwNqASTOTRU/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const popup = document.getElementById('popup');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => {
+                    console.log('Success!', response);
+
+                    alert('Form submitted successfully!');
+
+                    popup.style.display = 'none';
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+        document.getElementById('contactBtn').addEventListener('click', function() {
+          document.getElementById('popup').style.display = 'block';
+        });
+            
+        document.getElementById('close-popup').addEventListener('click', function() {
+          document.getElementById('popup').style.display = 'none';
+        });
+        
+        // Close popup when clicking outside of it
+        window.addEventListener('click', function(event) {
+          var popup = document.getElementById('popup');
+          if (event.target == popup) {
+              popup.style.display = 'none';
+          }
+        });
+        </script>
 </body>
 </html>
