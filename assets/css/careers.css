@@ -1657,3 +1657,9 @@ input[type="submit"]:hover {
 
 
 /*end contact form*/
+
+.cp-text{
+  text-align: center;
+  font-size: small;
+  color: #fff;
+}

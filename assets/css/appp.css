@@ -175,3 +175,9 @@ body{
 .tag:hover {
     transform: scale(1.1);
 }
+
+.cp-text{
+    text-align: center;
+    font-size: small;
+    color: #fff;
+  }

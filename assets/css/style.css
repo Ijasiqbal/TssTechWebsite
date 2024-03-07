@@ -1855,3 +1855,9 @@ border: 1px solid var(--shade3);
   animation: slide-in 1000ms;
 }
 /* end previous services css for about us section*/
+
+.cp-text{
+  text-align: center;
+  font-size: small;
+  color: #fff;
+}

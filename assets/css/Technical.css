@@ -218,3 +218,8 @@ body {
     }
     
 }
+.cp-text{
+    text-align: center;
+    font-size: small;
+    color: #fff;
+  }
